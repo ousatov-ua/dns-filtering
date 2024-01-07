@@ -4,7 +4,7 @@ Some useful configuration to use unbound/nginx/redis
 All is for Ubuntu 22.04
 
 # unbound
-
+Compile unbound locally.
 Configure unbound with next command:
 
 ```sh
