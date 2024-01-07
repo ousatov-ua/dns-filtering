@@ -40,12 +40,12 @@ You can try to use nginx from apt repository, I think it is better to have it up
 ```sh
 sudo apt install nginx
 ```
-It may say that 'stream' is not supported.
+It may say that 'stream' is not supported. In this case you will need to compile it locally.
 
 For compiling nginx I used next parameters:
 
 ```sh
-./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-pcre --pid-path=/var/run/nginx.pid --with-http_ssl_module --with-http_auth_request_module --modules-path=/etc/nginx/modules --with-http_v2_module  --with-stream
+./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-pcre --pid-path=/var/run/nginx.pid --with-http_ssl_module --with-http_auth_request_module --modules-path=/etc/nginx/modules --with-http_v2_module --with-stream
 ```
 
 Also, you will need `nginx-module-njs`.
