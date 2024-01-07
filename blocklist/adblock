@@ -1,0 +1,24 @@
+# banking
+@@||cabinet.credit-agricole.ua^$document
+@@||online.credit-agricole.ua^$document
+@@||next.privat24.ua^$document
+@@||privat24.privatbank.ua^$document
+@@||otp24.privatbank.ua^$document
+@@||online.raiffeisen.ua^$document
+@@||otpsmart.com.ua^$document
+@@||portal.pfu.gov.ua^$document
+
+# Keenetic
+||captive.keenetic.ru^$document
+
+# Github
+||collector.github.com^$document
+
+# ? something needed by iOS to upgrade
+@@||local^$document
+
+# rus
+||ru^$document
+
+# july games
+@@||elka2023-static-global-mobile.starkgames.app^$document

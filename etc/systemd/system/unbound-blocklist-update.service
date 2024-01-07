@@ -1,0 +1,6 @@
+[Unit]
+Description=Unbound blocklist update service
+After=network.target
+
+[Service]
+ExecStart=/opt/unbound/blocklists/update.sh

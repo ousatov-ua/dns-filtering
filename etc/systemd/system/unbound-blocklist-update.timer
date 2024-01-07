@@ -1,0 +1,9 @@
+[Unit]
+Description=Unbound blocklist update timer - Monthly on last SUN at 4:00AM
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target
