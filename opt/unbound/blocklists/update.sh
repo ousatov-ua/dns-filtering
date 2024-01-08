@@ -25,9 +25,19 @@ LOCAL_FILE="/opt/unbound/blocklists/hagezy-no-safe-search.conf"
 
 curl -o "$LOCAL_FILE" "$CONF_URL"
 
+RPZ_URL="https://raw.githubusercontent.com/hagezi/dns-blocklists/main/unbound/tif.blacklist.conf"
+LOCAL_FILE="/opt/unbound/blocklists/hagezy-threat.conf"
+
+curl -o "$LOCAL_FILE" "$RPZ_URL"
+
 CONF_URL="https://raw.githubusercontent.com/ousatov-ua/dns-filtering/main/blocklist/unbound-list.conf"
 LOCAL_FILE="/opt/unbound/blocklists/olus-filter.conf"
 
 curl -o "$LOCAL_FILE" "$CONF_URL"
+
+RPZ_URL="https://raw.githubusercontent.com/ousatov-ua/dns-filtering/main/blocklist/unbound-safe-search.conf"
+LOCAL_FILE="/opt/unbound/blocklists/unbound-safe-search.conf"
+
+curl -o "$LOCAL_FILE" "$RPZ_URL"
 
 unbound-control reload_keep_cache
