@@ -1,1 +1,12 @@
+$TTL 60
+@            IN    SOA  localhost. root.localhost.  (
+                      4   ; serial
+                      3H  ; refresh
+                      1H  ; retry
+                      1W  ; expiry
+                      1H) ; minimum
 
+                      IN     NS      localhost.
+
+ elka2023-static-global-mobile.starkgames.app                 CNAME   rpz-passthru.
+ *.elka2023-static-global-mobile.starkgames.app               CNAME   rpz-passthru.
