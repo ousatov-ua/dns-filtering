@@ -1,6 +1,5 @@
-$TTL 30
-@ IN SOA olus-dns.com. olus-dns.com. 1704812401 86400 3600 604800 30
- NS localhost.
-
- elka2023-static-global-mobile.starkgames.app                 CNAME   rpz-passthru.
- *.elka2023-static-global-mobile.starkgames.app               CNAME   rpz-passthru.
+$TTL 300
+@ SOA localhost. root.localhost. 1704792060 43200 3600 259200 300
+  NS  localhost.
+elka2023-static-global-mobile.starkgames.app    600 IN           CNAME rpz-passthru.   
+elka2023-static-global-mobile.starkgames.app    600 IN           CNAME rpz-passthru.
