@@ -3,3 +3,4 @@ $TTL 300
   NS  localhost.
 elka2023-static-global-mobile.starkgames.app    600 IN           CNAME rpz-passthru.   
 elka2023-static-global-mobile.starkgames.app    600 IN           CNAME rpz-passthru.
+erb8ez-launches.appsflyersdk.com                600 IN           CNAME rpz-passthru.          
