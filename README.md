@@ -1,5 +1,5 @@
-# Configuration for DNS filtering server based on Unbound + Redis + Nginx
-Some useful configuration to use unbound/nginx/redis.
+# Configuration for DNS filtering server
+All is tested on Ubuntu 22.04
 
 The architecture is next:
 1) unbound is working on port `53`
@@ -16,7 +16,7 @@ Client-id should be some special uniqe combination, so DNS server is secured: di
 
 For sure, you can change it in `/etc/nginx/nginx.conf`
 
-All is for Ubuntu 22.04
+
 
 # unbound
 We need unbound which is compiled locally, because standard package does not contain module `cachedb` which is needed to connect to Redis.
