@@ -19,7 +19,7 @@ For sure, you can change it in `/etc/nginx/nginx.conf`
 
 
 # unbound
-We need unbound which is compiled locally, because standard package does not contain module `cachedb` which is needed to connect to Redis.
+We need **Unbound Version 1.19.0** which is compiled locally, because standard package does not contain module `cachedb` which is needed to connect to Redis.
 This is the full version print:
 ```
 unbound -V
