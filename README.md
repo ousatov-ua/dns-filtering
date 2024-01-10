@@ -4,7 +4,7 @@ All is tested on Ubuntu 22.04
 The architecture is next:
 1) unbound is working on port `53`
 2) unbound has persistent L2 cache which is represented by Redis
-3) Redis is running on the same machine where unbound
+3) Redis is running on the same machine where Unbound
 4) Nginx is listening for DoH requests on regular `443` port and proxy them to unbound port `53`
 
 Pay attention, threads for unbound, workers for redis, instances for nginx are equals 4 = 2 core cpu with hyperthreading. If you have another number - you need to modify it.
