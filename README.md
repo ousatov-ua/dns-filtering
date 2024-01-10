@@ -93,10 +93,3 @@ Copy `unbound-blocklist-update.timer` and `unbound-blocklist-update.timer` to /e
 
 
 `systemctl enable unbound-blocklist-update.timer`
-
-
-`systemctl start unbound-blocklist-update.timer`
-
-
-
-Copy `njs.d` to `/etc/nginx/njs.d`
