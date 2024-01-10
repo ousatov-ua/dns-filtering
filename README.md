@@ -7,7 +7,7 @@ The architecture is next:
 3) Redis is running on the same machine where unbound
 4) Nginx is listening for DoH requests on regular `443` port and proxy them to unbound port `53`
 
-Pay attention, the thread for unbound, workers for redis, instances for nginx are equals 4 = 2 core cpu with hyperthreading. If you have another number - you need to modify it.
+Pay attention, threads for unbound, workers for redis, instances for nginx are equals 4 = 2 core cpu with hyperthreading. If you have another number - you need to modify it.
 
 
 Nginx is used as authorized proxy, it proxies DoH requests on `/dns-query/<client-id>`
