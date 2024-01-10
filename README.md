@@ -1,5 +1,5 @@
 # Configuration for DNS filtering server
-All is tested on Ubuntu 22.04
+All is tested on **Ubuntu 22.04**
 
 The architecture is next:
 1) unbound is working on port `53`
