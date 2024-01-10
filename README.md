@@ -82,10 +82,12 @@ Also, you need to put `njs.d` inside `/etc/nginx`
 # Update blocklists
 
 Configuration for Unbound contains block lists.
+
 With next steps you can create scheduled job to update them on regular basic.
 
-`chmod +x /opt/unbound/blocklists/update.sh`
+Copy `/opt/unbound/` into yours  `/opt/unbound` then run next commands:
 
+`chmod +x /opt/unbound/blocklists/update.sh`
 
 Copy `unbound-blocklist-update.timer` and `unbound-blocklist-update.timer` to /etc/systemd/system
 
