@@ -1,4 +1,4 @@
-# dns-filtering
+# Configuration for DNS filtering server based on Unbound + Redis + Nginx
 Some useful configuration to use unbound/nginx/redis.
 
 The architecture is next:
