@@ -1,14 +1,47 @@
 # dns-filtering
-Some useful configuration to use unbound/nginx/redis
+Some useful configuration to use unbound/nginx/redis.
+
+The architecture is next:
+1) unbound is working on port `53`
+2) unbound has persistent L2 cache which is represented by Redis
+3) Redis is running on the same machine where unbound
+4) Nginx is listening for DoH requests on regular `443` port and proxy them to unbound port `53`
+
+Pay attention, the thread for unbound, workers for redis, instances for nginx are equals 4 = 2 core cpu with hyperthreading. If you have another number - you need to modify it.
+
+
+Nginx is used as authorized proxy, it proxies DoH requests on `/dns-query/<client-id>`
+
+Client-id should be some special uniqe combination, so DNS server is secured: direct requests to `/dns-query` are forbidden.
+
+For sure, you can change it in `/etc/nginx/nginx.conf`
 
 All is for Ubuntu 22.04
 
 # unbound
-Compile unbound locally.
-Configure unbound with next command:
+We need unbound which is compiled locally, because standard package does not contain module `cachedb` which is needed to connect to Redis.
+This is the full version print:
+```
+unbound -V
+Version 1.19.0
+
+Configure line: --with-libevent --with-libhiredis --with-libnghttp2 --disable-dependency-tracking --disable-flto --disable-maintainer-mode --disable-option-checking --disable-rpath --disable-silent-rules --enable-cachedb --enable-dnstap --enable-subnet --enable-systemd --enable-tfo-client --enable-tfo-server
+Linked libs: libevent 2.1.12-stable (it uses epoll), OpenSSL 3.0.2 15 Mar 2022
+Linked modules: dns64 cachedb subnetcache respip validator iterator
+TCP Fastopen feature available
+
+BSD licensed, see LICENSE in source package for details.
+Report bugs to unbound-bugs@nlnetlabs.nl or https://github.com/NLnetLabs/unbound/issues
+```
+So, download Unbound 1.19.0 sources, unpack, `cd` inside extract and configure it: 
 
 ```sh
 ./configure --prefix=/usr --includedir=\${prefix}/include --infodir=\${prefix}/share/info --mandir=\${prefix}/share/man --localstatedir=/var --runstatedir=/run --sysconfdir=/etc --with-chroot-dir= --with-dnstap-socket-path=/run/dnstap.sock --with-libevent --with-libhiredis --with-libnghttp2 --with-pidfile=/run/unbound.pid --with-pythonmodule --with-pyunbound --disable-dependency-tracking --disable-flto --disable-maintainer-mode --disable-option-checking --disable-rpath --disable-silent-rules --enable-cachedb --enable-dnstap --enable-subnet --enable-systemd --enable-tfo-client --enable-tfo-server
+```
+Then:
+```sh
+make
+make install
 ```
 
 After installing unbound, setup unbound-control:
@@ -17,7 +50,6 @@ After installing unbound, setup unbound-control:
 ```sh
 unbound-control-setup
 ```
-
 
 Config is `/usr/local/etc/unbound/unbound.conf`
 # Update blocklists
