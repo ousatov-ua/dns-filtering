@@ -2,12 +2,12 @@
 All is tested on **Ubuntu 22.04 LTS**
 
 The architecture is next:
-1) unbound is working on port `53`
-2) unbound has persistent L2 cache which is represented by Redis
+1) Unbound is working on port `53`
+2) Unbound has persistent L2 cache which is represented by Redis
 3) Redis is running on the same machine where Unbound
-4) Nginx is listening for DoH requests on regular `443` port and proxy them to unbound port `53`
+4) Nginx is listening for DoH requests on regular `443` port and proxy them to Unbound port `53`
 
-Pay attention, threads for unbound, workers for redis, instances for nginx are equals 4 = 2 core cpu with hyperthreading. If you have another number - you need to modify it.
+Pay attention, threads for Unbound, workers for redis, instances for nginx are equals 4 = 2 core cpu with hyperthreading. If you have another number - you need to modify it.
 
 
 Nginx is used as authorized proxy, it proxies DoH requests on `/dns-query/<client-id>`
@@ -18,7 +18,7 @@ For sure, you can change it in `/etc/nginx/nginx.conf`
 
 
 
-# unbound
+# Unbound
 We need **Unbound Version 1.19.0** which is compiled locally, because standard package does not contain module `cachedb` which is needed to connect to Redis.
 This is the full version print:
 ```
@@ -44,7 +44,7 @@ make
 make install
 ```
 
-After installing unbound, setup unbound-control:
+After installing Unbound, setup unbound-control:
 
 
 ```sh
