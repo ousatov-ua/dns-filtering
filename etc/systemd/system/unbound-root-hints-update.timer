@@ -3,8 +3,8 @@ Description=Unbound roothints update timer - Weekly
 
 [Timer]
 OnCalendar=daily
-Persistent=true
 AccuracySec=1h
+Persistent=true
 
 [Install]
 WantedBy=timers.target
