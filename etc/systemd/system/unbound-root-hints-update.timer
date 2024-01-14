@@ -1,9 +1,10 @@
 [Unit]
-Description=Unbound roothints update timer - Daily
+Description=Unbound roothints update timer - Weekly
 
 [Timer]
 OnCalendar=daily
 Persistent=true
+AccuracySec=1h
 
 [Install]
 WantedBy=timers.target
