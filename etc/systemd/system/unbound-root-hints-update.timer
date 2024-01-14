@@ -1,8 +1,8 @@
 [Unit]
-Description=Unbound roothints update timer - Weekly
+Description=Unbound roothints update timer - Monthly
 
 [Timer]
-OnCalendar=weekly
+OnCalendar=monthly
 AccuracySec=1h
 Persistent=true
 
