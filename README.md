@@ -53,7 +53,7 @@ unbound-control-setup
 
 Config is `/usr/local/etc/unbound/unbound.conf`.
 
-Please pay attention that by default `Unbound` will use root hints to resolve DNS names: this approach gives the best privacy.
+Please pay attention that by default `Unbound` will use root hints to resolve DNS names: this approach gives the best privacy but less security.
 
 If you want to use forwarders, please uncomment the appropriate section.
 
