@@ -103,3 +103,9 @@ Copy files from `etc/systemd/system` to `/etc/systemd/system` and run next comma
 systemctl enable unbound-blocklist-update.timer
 systemctl enable unbound-root-hints-update.timer
 ```
+# Other stuff
+There are some optimizations here:
+
+`/etc/sysctl.conf`
+
+I have disable IPv6 in `grub` too.
