@@ -1,0 +1,6 @@
+[Unit]
+Description=Unbound root hints update service
+After=network.target
+
+[Service]
+ExecStart=/opt/unbound/update-roothints.sh
