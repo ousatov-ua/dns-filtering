@@ -79,7 +79,7 @@ make install
 You can replace `etc/nginx/nginx.conf` with one in this repo + put `doh-mappings.conf` to the same folder.
 Also, you need to put `njs.d` inside `/etc/nginx`
 
-# Update blocklists
+# Update blocklists and root hints
 
 Configuration for Unbound contains block lists. For sure, you can edit them, I'm using my own configuration.
 
@@ -87,8 +87,15 @@ With next steps you can create scheduled job to update them on regular basic.
 
 Copy `/opt/unbound/` into yours  `/opt/unbound` then run next commands:
 
-`chmod +x /opt/unbound/blocklists/update.sh`
+```sh
+chmod +x /opt/unbound/blocklists/update.sh
+chmod +x /opt/unbound/update-roothints.sh
+```
 
-Copy `unbound-blocklist-update.timer` and `unbound-blocklist-update.timer` to /etc/systemd/system
 
-`systemctl enable unbound-blocklist-update.timer`
+Copy files from `etc/systemd/system` to `/etc/systemd/system` and run next commands:
+
+```sh
+systemctl enable unbound-blocklist-update.timer
+systemctl enable unbound-root-hints-update.timer
+```
