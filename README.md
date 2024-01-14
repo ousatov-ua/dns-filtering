@@ -51,7 +51,11 @@ After installing Unbound, setup unbound-control:
 unbound-control-setup
 ```
 
-Config is `/usr/local/etc/unbound/unbound.conf`
+Config is `/usr/local/etc/unbound/unbound.conf`.
+
+Please pay attention that by default `Unbound` will use root hints to resolve DNS names: this approach gives the best privacy.
+
+If you want to use forwarders, please uncomment the appropriate section.
 
 # Nginx
 Again, we need to compile it from sources to add additinal needed modules linked statically.
