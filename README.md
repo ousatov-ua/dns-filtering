@@ -89,7 +89,7 @@ Also, you need to put `njs.d` inside `/etc/nginx`
 
 Configuration for Unbound contains block lists. For sure, you can edit them, I'm using my own configuration.
 
-With next steps you can create scheduled job to update them on regular basic.
+With next steps you can create scheduled job to update them on regular basis.
 
 Copy `/opt/unbound/` into yours  `/opt/unbound` then run next commands:
 
