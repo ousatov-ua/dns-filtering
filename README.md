@@ -64,7 +64,7 @@ Again, we need to compile it from sources to add additinal needed modules linked
 
 So download **Nginx 1.25.3** and unpack it
 
-Download `njs` sources and put them into `/etc/nginx/modules`.
+Download `njs` https://nginx.org/en/docs/njs/install.html sources and put them into `/etc/nginx/modules`.
 
 Current configuration works for **njs version 0.8.2**
 
