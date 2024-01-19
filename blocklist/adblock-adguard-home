@@ -13,3 +13,26 @@
 
 # rus
 ||ru^$important
+
+# iranian
+||ir^$important
+
+# north korean
+||kp^$important
+
+# adult
+||club^$important
+||cash^$important
+||cam^$important
+||xyz^$important
+||lol^$important
+||chat^$important
+||date^$important
+||mobi^$important
+||watch^$important
+||tube^$important
+||wtf^$important
+||beer^$important
+
+# yandex
+||yandex.com^$important
