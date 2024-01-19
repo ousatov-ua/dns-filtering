@@ -55,7 +55,7 @@ Config is `/usr/local/etc/unbound/unbound.conf`.
 
 You may need to change user rights for `/usr/local/etc/unbound`: unbound has to have write permissions in case of using auto trust anchor file, for instance: `chown unbound:unbound /usr/local/etc/unbound`
 
-Please pay attention that by default `Unbound` will use root hints to resolve DNS names: this approach gives the best privacy but less security.
+Please pay attention that by default `Unbound` will use root hints to resolve DNS names: this approach gives the best privacy, security is based on DNSSEC.
 
 If you want to use forwarders, please uncomment the appropriate section.
 
