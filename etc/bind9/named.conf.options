@@ -3,6 +3,7 @@ options {
         recursion yes;
 
         max-cache-size 100M;  // Set the cache size as needed
+        max-cache-ttl 6h; // 6 hours
         dump-file "/var/cache/bind/dump.db"; // save cache before restart
         prefetch  300;
 
