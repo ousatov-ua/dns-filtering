@@ -1,0 +1,7 @@
+#
+# run resolvconf?
+RESOLVCONF=no
+
+# startup options for the server
+# -n 4 - this is workers
+OPTIONS="-n 4 -u bind"
