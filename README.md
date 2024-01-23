@@ -111,3 +111,5 @@ There are some optimizations here:
 `/etc/sysctl.conf`
 
 I have disable IPv6 in `grub` too.
+
+Also, there is a config for Bind9. But it does not use any filters - it is suppose to run it with integration with Adguard Home.
