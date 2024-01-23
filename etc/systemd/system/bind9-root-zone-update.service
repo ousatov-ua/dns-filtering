@@ -1,0 +1,6 @@
+[Unit]
+Description=Bind9 root zone update service
+After=network.target
+
+[Service]
+ExecStart=/opt/bind9/update-root-zone.sh
