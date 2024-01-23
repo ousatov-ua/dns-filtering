@@ -1,0 +1,10 @@
+[Unit]
+Description=Bind9 root zone timer - Daily
+
+[Timer]
+OnCalendar=daily
+AccuracySec=1h
+Persistent=true
+
+[Install]
+WantedBy=timers.target
