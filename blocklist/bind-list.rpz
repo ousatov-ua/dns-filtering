@@ -1,44 +1,55 @@
-server:
-# block ru sites
-local-zone: "ru" redirect
-local-data: "ru 3600 IN A 0.0.0.0"
+$TTL 128
+;
+$ORIGIN rpz.custom-list.
+rpz.custom-list.      IN  SOA localhost.         root.localhost. (
+                2474766874 ; serial
+                1d ; refresh
+                2h ; retry
+                4w ; expire
+                1h ; default_ttl
+                )
+
+;
+; Zone Records
+; Block domains
+@        IN NS  localhost.
+ru  CNAME  .
+*.ru CNAME .
+
 
 # iranian
-local-zone: "ir" redirect
-local-data: "ir 3600 IN A 0.0.0.0"
+ir CNAME .
+*.ir CNAME .
 
 # north korean
-local-zone: "kp" redirect
-local-data: "kp 3600 IN A 0.0.0.0"
+kp CNAME .
+*.kp CNAME .
 
 # adult
-local-zone: "club" redirect
-local-data: "club 3600 IN A 0.0.0.0"
-local-zone: "cash" redirect
-local-data: "cash 3600 IN A 0.0.0.0"
-local-zone: "cam" redirect
-local-data: "cam 3600 IN A 0.0.0.0"
-local-zone: "xyz" redirect
-local-data: "xyz 3600 IN A 0.0.0.0"
-local-zone: "lol" redirect
-local-data: "lol 3600 IN A 0.0.0.0"
-local-zone: "chat" redirect
-local-data: "chat 3600 IN A 0.0.0.0"
-local-zone: "date" redirect
-local-data: "date 3600 IN A 0.0.0.0"
-local-zone: "mobi" redirect
-local-data: "mobi 3600 IN A 0.0.0.0"
-local-zone: "watch" redirect
-local-data: "watch 3600 IN A 0.0.0.0"
-local-zone: "tube" redirect
-local-data: "tube 3600 IN A 0.0.0.0"
-local-zone: "wtf" redirect
-local-data: "wtf 3600 IN A 0.0.0.0"
-local-zone: "beer" redirect
-local-data: "beer 3600 IN A 0.0.0.0"
+club CNAME .
+*.club CNAME .
+cash CNAME .
+*.cash CNAME .
+cam CNAME .
+*.cam CNAME .
+xyz CNAME .
+*.xyz CNAME .
+lol CNAME .
+*.lol CNAME .
+chat CNAME .
+*.chat CNAME .
+date CNAME .
+.*date CNAME .
+mobi CNAME .
+*.mobi CNAME .
+watch CNAME .
+*.watch CNAME .
+tube CNAME .
+*.tube CNAME .
+wtf CNAME .
+*.wtf CNAME .
+beer CNAME .
+*.beer CNAME .
 
 # yandex
-local-zone: "yandex.com." always_nxdomain
-
-#ios updates
-local-zone: "local." always_transparent
+yandex.com CNAME .
