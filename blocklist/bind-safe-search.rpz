@@ -1,0 +1,16 @@
+rpz-safe-search.      IN  SOA localhost.         root.localhost. (
+                2474766874 ; serial
+                1d ; refresh
+                2h ; retry
+                4w ; expire
+                1h ; default_ttl
+                )
+
+;
+; Zone Records
+; Google SafeSearch
+@        IN NS  localhost.
+google.com              CNAME   forcesafesearch.google.com.
+www.google.com      CNAME   forcesafesearch.google.com.
+google.com.ua         CNAME   forcesafesearch.google.com.
+www.google.com.ua    CNAME   forcesafesearch.google.com.
