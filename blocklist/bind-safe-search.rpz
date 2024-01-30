@@ -8,9 +8,15 @@ rpz-safe-search.      IN  SOA localhost.         root.localhost. (
 
 ;
 ; Zone Records
-; Google SafeSearch
+; SafeSearch
 @        IN NS  localhost.
 google.com              CNAME   forcesafesearch.google.com.
-www.google.com      CNAME   forcesafesearch.google.com.
-google.com.ua         CNAME   forcesafesearch.google.com.
-www.google.com.ua    CNAME   forcesafesearch.google.com.
+www.google.com          CNAME   forcesafesearch.google.com.
+google.com.ua           CNAME   forcesafesearch.google.com.
+www.google.com.ua       CNAME   forcesafesearch.google.com.
+bing.com                CNAME   strict.bing.com.
+www.bing.com            CNAME   strict.bing.com.
+duckduckgo.com          CNAME   safe.duckduckgo.com.
+www.duckduckgo.com      CNAME   safe.duckduckgo.com.
+pixaby.com              CNAME   safesearch.pixabay.com.
+www.pixaby.com          CNAME   safesearch.pixabay.com.
