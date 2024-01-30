@@ -1,18 +1,6 @@
-$TTL 128
-;
-$ORIGIN rpz.olus-blocklist.
-rpz.olus-blocklist.      IN  SOA localhost.         root.localhost. (
-                2474766874 ; serial
-                1d ; refresh
-                2h ; retry
-                4w ; expire
-                1h ; default_ttl
-                )
-
-;
-; Zone Records
-; SafeSearch
-@        IN NS  localhost.
+$TTL 30
+@ IN SOA rpz.olus-dns.com. hostmaster.olus-dns.com. 1706637601 86400 3600 604800 30
+ NS localhost.
 google.com              CNAME   forcesafesearch.google.com.
 www.google.com          CNAME   forcesafesearch.google.com.
 google.com.ua           CNAME   forcesafesearch.google.com.
@@ -48,8 +36,6 @@ lol 	  CNAME .
 *.lol 	CNAME .
 chat 	  CNAME .
 *.chat 	CNAME .
-date 	  CNAME .
-.*date 	CNAME .
 mobi 	  CNAME .
 *.mobi 	CNAME .
 watch 	CNAME .
