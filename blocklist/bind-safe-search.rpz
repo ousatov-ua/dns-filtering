@@ -1,3 +1,6 @@
+$TTL 128
+;
+$ORIGIN rpz-safe-search.
 rpz-safe-search.      IN  SOA localhost.         root.localhost. (
                 2474766874 ; serial
                 1d ; refresh
