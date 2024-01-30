@@ -1,7 +1,7 @@
 $TTL 128
 ;
-$ORIGIN rpz.safe-search.
-rpz.safe-search.      IN  SOA localhost.         root.localhost. (
+$ORIGIN rpz.olus-blocklist.
+rpz.olus-blocklist.      IN  SOA localhost.         root.localhost. (
                 2474766874 ; serial
                 1d ; refresh
                 2h ; retry
@@ -23,3 +23,43 @@ duckduckgo.com          CNAME   safe.duckduckgo.com.
 www.duckduckgo.com      CNAME   safe.duckduckgo.com.
 pixaby.com              CNAME   safesearch.pixabay.com.
 www.pixaby.com          CNAME   safesearch.pixabay.com.
+
+ru  	   CNAME .
+*.ru     CNAME .
+
+; iranian
+ir 	    CNAME .
+*.ir 	  CNAME .
+
+; north korean
+kp 	    CNAME .
+*.kp 	  CNAME .
+
+; adult
+club 	  CNAME .
+*.club  CNAME .
+cash    CNAME .
+*.cash 	CNAME .
+cam 	  CNAME .
+*.cam 	CNAME .
+xyz 	  CNAME .
+*.xyz 	CNAME .
+lol 	  CNAME .
+*.lol 	CNAME .
+chat 	  CNAME .
+*.chat 	CNAME .
+date 	  CNAME .
+.*date 	CNAME .
+mobi 	  CNAME .
+*.mobi 	CNAME .
+watch 	CNAME .
+*.watch	CNAME .
+tube 	  CNAME .
+*.tube 	CNAME .
+wtf 	  CNAME .
+*.wtf 	CNAME .
+beer 	  CNAME .
+*.beer 	CNAME .
+
+; yandex
+yandex.com	CNAME .
