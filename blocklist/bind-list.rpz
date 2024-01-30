@@ -1,7 +1,7 @@
 $TTL 128
 ;
-$ORIGIN rpz.custom-list.
-rpz.custom-list.      IN  SOA localhost.         root.localhost. (
+$ORIGIN rpz.olus-list.
+rpz.olus-list.      IN  SOA localhost.         root.localhost. (
                 2474766874 ; serial
                 1d ; refresh
                 2h ; retry
