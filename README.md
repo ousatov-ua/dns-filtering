@@ -4,8 +4,11 @@ All is tested on **Ubuntu 22.04 LTS**
 Repository contains different approaches:
 
 -- Unbound + Redis + Nginx
+
 -- Bind9 + RPZ + dnsdist
+
 -- Knot-resolver + AdguardHome
+
 -- Any variations: Unbound + Redis + AdguardHome, Bind9 + AdguardHome, Knot-resolver + AdguardHome...
 
 ## Unbound + Redis + Nginx
