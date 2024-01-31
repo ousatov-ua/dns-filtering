@@ -1,6 +1,10 @@
 # Configuration for DNS filtering server
 All is tested on **Ubuntu 22.04 LTS**
 
+Repository contains different approaches.
+
+## Unbound + Redis + Nginx
+
 The architecture is next:
 1) Unbound is working on port `53`
 2) Unbound has persistent L2 cache which is represented by Redis
@@ -18,7 +22,7 @@ For sure, you can change it in `/etc/nginx/nginx.conf`
 
 
 
-# Unbound
+### Unbound
 We need **Unbound Version 1.19.0** which is compiled locally, because standard package does not contain module `cachedb` which is needed to connect to Redis.
 This is the full version print:
 ```
@@ -59,7 +63,7 @@ Please pay attention that by default `Unbound` will use root hints to resolve DN
 
 If you want to use forwarders, please uncomment the appropriate section.
 
-# Nginx
+### Nginx
 Again, we need to compile it from sources to add additinal needed modules linked statically.
 
 So download **Nginx 1.25.3** and unpack it
@@ -85,7 +89,7 @@ make install
 You can replace `etc/nginx/nginx.conf` with one in this repo + put `doh-mappings.conf` to the same folder.
 Also, you need to put `njs.d` inside `/etc/nginx`
 
-# Update blocklists and root hints
+### Update blocklists and root hints
 
 Configuration for Unbound contains block lists. For sure, you can edit them, I'm using my own configuration.
 
@@ -105,6 +109,14 @@ Copy files from `etc/systemd/system` to `/etc/systemd/system` and run next comma
 systemctl enable unbound-blocklist-update.timer
 systemctl enable unbound-root-hints-update.timer
 ```
+## Bind9 + RPZ + dnsdist
+
+To be added.
+
+## Knot-resolver + AdguardHome
+
+To be added.
+
 # Other stuff
 There are some optimizations here:
 
