@@ -1,0 +1,6 @@
+[Unit]
+Description=Bind9 Block list update service
+After=network.target
+
+[Service]
+ExecStart=/opt/bind9/update-blocklists.sh
