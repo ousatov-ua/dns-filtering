@@ -1,20 +1,41 @@
 options {
-        directory "/var/cache/bind";
-        recursion yes;
+	directory "/var/cache/bind";
+	recursion yes;
 
-        max-cache-size 100M;  // Set the cache size as needed
-        dump-file "/var/cache/bind/dump.db"; // save cache before restart
+	max-cache-size 1024M;  // Set the cache size as needed
 
-        prefetch 10 60;
+    	prefetch 10 60;
 
-        auth-nxdomain yes;
-        minimal-responses yes;
+	minimal-responses yes;
 
-        //========================================================================
-        // If BIND logs error messages about the root key being expired,
-        // you will need to update your keys.  See https://www.isc.org/bind-keys
-        //========================================================================
-        dnssec-validation auto;
-        
-        listen-on port 5453 { 127.0.0.1; };
+	//========================================================================
+	// If BIND logs error messages about the root key being expired,
+	// you will need to update your keys.  See https://www.isc.org/bind-keys
+	//========================================================================
+	dnssec-validation  auto;
+
+	listen-on port 5353 {127.0.0.1;};
+
+	// Tuning
+	qname-minimization relaxed;
+	interface-interval 0;
+	max-ncache-ttl 3600;
+	allow-query { any; };
+	notify yes;
+	recursive-clients 20000;
+	tcp-clients 20000;
+        check-names master ignore;
+        check-names slave ignore;
+        check-names response ignore;
+	zone-statistics no;
+
+	response-policy { 
+	    zone "rpz.oisd-nsfw"; 
+	    zone "rpz.hagezy-anti-privacy"; 
+	    zone "rpz.hagezy-gambling";
+	    zone "rpz.hagezy-multi-normal"; 
+	    zone "rpz.hagezy-no-safe-search"; 
+	    zone "rpz.hagezy-threat"; 
+	    zone "rpz.olus-dns.com"; 
+	};
 };
