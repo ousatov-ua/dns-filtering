@@ -1,0 +1,43 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "rpz.oisd-nsfw" {
+    type master;
+    file "/etc/bind/blocklists/oisd-nsfw.rpz";
+};
+
+
+zone "rpz.hagezy-anti-privacy" {
+    type master;
+    file "/etc/bind/blocklists/hagezy-anti-privacy.rpz";
+};
+
+zone "rpz.hagezy-gambling" {
+    type master;
+    file "/etc/bind/blocklists/hagezy-gamblng.rpz";
+};
+
+zone "rpz.hagezy-multi-normal" {
+    type master;
+    file "/etc/bind/blocklists/hagezy-multi-normal.rpz";
+};
+
+zone "rpz.hagezy-no-safe-search" {
+    type master;
+    file "/etc/bind/blocklists/hagezy-no-safe-search.rpz";
+};
+
+zone "rpz.hagezy-threat" {
+    type master;
+    file "/etc/bind/blocklists/hagezy-threat.rpz";
+};
+
+zone "rpz.olus-dns.com" {
+    type master;
+    file "/etc/bind/blocklists/olus-blocklist.rpz";
+};
