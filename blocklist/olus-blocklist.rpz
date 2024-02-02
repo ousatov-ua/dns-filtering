@@ -24,8 +24,6 @@ kp 	    CNAME .
 *.kp 	  CNAME .
 
 ; adult
-club 	  CNAME .
-*.club  CNAME .
 cash    CNAME .
 *.cash 	CNAME .
 cam 	  CNAME .
