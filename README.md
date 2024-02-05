@@ -119,11 +119,15 @@ systemctl enable unbound-root-hints-update.timer
 ```
 ## Bind9 + RPZ + dnsdist
 
-To be added.
+Documentation to be added.
+
+## PowerDNS recursor + RPZ + dnsdist
+
+Documentation to be added.
 
 ## Knot-resolver + AdguardHome
 
-To be added.
+Documentation to be added.
 
 # Other stuff
 There are some optimizations here:
