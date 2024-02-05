@@ -1,5 +1,4 @@
-$TTL 30
-@ IN SOA rpz.olus-dns.com. hostmaster.olus-dns.com. 1706637601 86400 3600 604800 30
+@ IN SOA rpz.olus-dns.com. hostmaster.olus-dns.com. 1706637601 86400 3600 604800 86400
  NS localhost.
 google.com              CNAME   forcesafesearch.google.com.
 www.google.com          CNAME   forcesafesearch.google.com.
