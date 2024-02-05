@@ -1,0 +1,7 @@
+rpzFile("/opt/powerdns/blocklists/oisd-nsfw.rpz",{})
+rpzFile("/opt/powerdns/blocklists/hagezy-anti-privacy.rpz",{})
+rpzFile("/opt/powerdns/blocklists/hagezy-gambling.rpz",{})
+rpzFile("/opt/powerdns/blocklists/hagezy-multi-normal.rpz",{})
+rpzFile("/opt/powerdns/blocklists/hagezy-no-safe-search.rpz",{})
+rpzFile("/opt/powerdns/blocklists/hagezy-threat.rpz",{})
+rpzFile("/opt/powerdns/blocklists/olus-blocklist.rpz",{})
