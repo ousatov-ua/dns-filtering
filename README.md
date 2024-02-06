@@ -123,6 +123,7 @@ Documentation to be added.
 
 ## PowerDNS recursor + RPZ + dnsdist
 
+NB: Seems like powerdns recursor needs much less memory comparing to BIND9. Also, rpz blocking rule works faster.
 Documentation to be added.
 
 ## Knot-resolver + AdguardHome
