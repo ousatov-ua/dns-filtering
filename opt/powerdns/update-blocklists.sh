@@ -16,4 +16,4 @@ mv /opt/powerdns/blocklists/_hagezy-no-safe-search.rpz /opt/powerdns/blocklists/
 mv /opt/powerdns/blocklists/_hagezy-threat.rpz /opt/powerdns/blocklists/hagezy-threat.rpz
 mv /opt/powerdns/blocklists/_olus-blocklist.rpz /opt/powerdns/blocklists/olus-blocklist.rpz
 
-rec_control reload-lua-config /etc/powerdns/blocklists.lua
+rec_control --timeout=60 reload-lua-config /etc/powerdns/blocklists.lua
