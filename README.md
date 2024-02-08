@@ -1,3 +1,14 @@
+# Prelude
+If you don't have it on your machine by default:
+
+```sh
+apt install bash-completion
+apt install rsyslog
+```
+
+Checkout out `.inputrc` in `/home/your_user` for autocomplete by a word previously typed
+
+
 # Configuration for DNS filtering server
 All is tested on **Ubuntu 22.04 LTS**
 
