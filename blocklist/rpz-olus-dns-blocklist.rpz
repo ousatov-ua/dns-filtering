@@ -1,0 +1,40 @@
+$TTL 86400
+@ IN SOA rpz.olus-dns-blocklist.com. hostmaster.olus-dns-blocklist.com. 1706637601 86400 3600 604800 86400
+ NS localhost.
+
+; russia
+ru  	   CNAME .
+*.ru     CNAME .
+
+; iranian
+ir 	    CNAME .
+*.ir 	  CNAME .
+
+; north korean
+kp 	    CNAME .
+*.kp 	  CNAME .
+
+; adult
+cash    CNAME .
+*.cash 	CNAME .
+cam 	  CNAME .
+*.cam 	CNAME .
+xyz 	  CNAME .
+*.xyz 	CNAME .
+lol 	  CNAME .
+*.lol 	CNAME .
+chat 	  CNAME .
+*.chat 	CNAME .
+mobi 	  CNAME .
+*.mobi 	CNAME .
+watch 	CNAME .
+*.watch	CNAME .
+tube 	  CNAME .
+*.tube 	CNAME .
+wtf 	  CNAME .
+*.wtf 	CNAME .
+beer 	  CNAME .
+*.beer 	CNAME .
+
+; yandex
+yandex.com	CNAME .
