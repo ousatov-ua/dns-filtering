@@ -1,5 +1,5 @@
 $TTL 86400
-@ IN SOA rpz.olus-dns-blocklist.com. hostmaster.olus-dns-blocklist.com. 1706637601 86400 3600 604800 86400
+@ IN SOA olus-dns.com. hostmaster.olus-dns.com. 1706637601 86400 3600 604800 86400
  NS localhost.
 
 ; russia
