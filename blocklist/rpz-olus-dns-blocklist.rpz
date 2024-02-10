@@ -38,5 +38,6 @@ beer 	  CNAME .
 
 ; yandex
 yandex.com	CNAME .
+*.yandex.com CNAME .
 censor.net CNAME .
-www.censor.net CNAME .
+*.censor.net CNAME .
