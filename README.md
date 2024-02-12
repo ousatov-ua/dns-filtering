@@ -138,10 +138,23 @@ NB: Seems like powerdns recursor needs much less memory comparing to BIND9. Also
 
 Documentation to be added.
 
-## Knot-resolver + AdguardHome
+## Knot-resolver6 + AdguardHome
 
 Documentation to be added.
+I followed steps from their howto to build it locally.
+Next changes are needed in `sysctl.conf`:
+```sh
+vm.max_map_count=1099511627776
+```
+And I did local change for python script for manager (wait for up to 120 secs)
 
+```sh
+vim /usr/lib/python3/dist-packages/knot_resolver_manager/kresd_controller/supervisord/plugin/sd_notify.py
+```
+```py
+if slf.state == ProcessStates.STARTING:
+        if time.time() - slf.laststart > 120:
+```
 # Other stuff
 There are some optimizations here:
 
