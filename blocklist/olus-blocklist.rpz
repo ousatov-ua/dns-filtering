@@ -24,26 +24,26 @@ kp 	    CNAME .
 *.kp 	  CNAME .
 
 ; adult
-cash    CNAME .
-*.cash 	CNAME .
-cam 	  CNAME .
-*.cam 	CNAME .
-xyz 	  CNAME .
-*.xyz 	CNAME .
-lol 	  CNAME .
-*.lol 	CNAME .
-chat 	  CNAME .
-*.chat 	CNAME .
-mobi 	  CNAME .
-*.mobi 	CNAME .
-watch 	CNAME .
-*.watch	CNAME .
-tube 	  CNAME .
-*.tube 	CNAME .
-wtf 	  CNAME .
-*.wtf 	CNAME .
-beer 	  CNAME .
-*.beer 	CNAME .
+; cash    CNAME .
+; *.cash 	CNAME .
+; cam 	  CNAME .
+; *.cam 	CNAME .
+; xyz 	  CNAME .
+; *.xyz 	CNAME .
+; lol 	  CNAME .
+; *.lol 	CNAME .
+; chat 	  CNAME .
+; *.chat 	CNAME .
+; mobi 	  CNAME .
+; *.mobi 	CNAME .
+; watch 	CNAME .
+; *.watch	CNAME .
+; tube 	  CNAME .
+; *.tube 	CNAME .
+; wtf 	  CNAME .
+; *.wtf 	CNAME .
+; beer 	  CNAME .
+; *.beer 	CNAME .
 
 ; yandex
 yandex.com	CNAME .
