@@ -6,6 +6,12 @@ apt install bash-completion
 apt install rsyslog
 ```
 
+Add this to `~/.bashrc` (additionally you may need to enable `/etc/bash.bashrc` - search for section "enable bash completion in interactive shells"
+```sh
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+```
+
 Checkout out `.inputrc` in `/home/your_user` for autocomplete by a word previously typed
 
 
