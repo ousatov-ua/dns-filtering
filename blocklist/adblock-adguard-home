@@ -1,16 +1,3 @@
-# banking
-@@||cabinet.credit-agricole.ua^$important
-@@||online.credit-agricole.ua^$important
-@@||next.privat24.ua^$document
-@@||privat24.privatbank.ua^$important
-@@||otp24.privatbank.ua^$important
-@@||online.raiffeisen.ua^$important
-@@||otpsmart.com.ua^$important
-@@||portal.pfu.gov.ua^$important
-
-# ? something needed by iOS to upgrade
-@@||local^$important
-
 # rus
 ||ru^$important
 
@@ -19,20 +6,6 @@
 
 # north korean
 ||kp^$important
-
-# adult
-#||club^$important
-||cash^$important
-||cam^$important
-||xyz^$important
-||lol^$important
-||chat^$important
-||date^$important
-||mobi^$important
-||watch^$important
-||tube^$important
-||wtf^$important
-||beer^$important
 
 # yandex
 ||yandex.com^$important
