@@ -6,7 +6,7 @@ apt install bash-completion
 apt install rsyslog
 ```
 
-Add this to `~/.bashrc` (additionally you may need to enable `/etc/bash.bashrc` - search for section "enable bash completion in interactive shells"
+Add this to `~/.inputrc` (additionally you may need to enable `/etc/bash.bashrc` - search for section "enable bash completion in interactive shells"
 ```sh
 $include /etc/inputrc
 
