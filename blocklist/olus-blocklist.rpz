@@ -16,6 +16,7 @@ m.youtube.com            CNAME   restrict.youtube.com.
 youtubei.googleapis.com  CNAME   restrict.youtube.com.
 youtube.googleapis.com   CNAME   restrict.youtube.com.
 www.youtube-nocookie.com CNAME   restrict.youtube.com.
+www.netbsd.org           CNAME   rpz-passthru.
 
 ru  	   CNAME .
 *.ru     CNAME .
