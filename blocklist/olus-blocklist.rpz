@@ -1,6 +1,8 @@
 $TTL 86400
 @ IN SOA rpz.olus-dns.com. hostmaster.olus-dns.com. 1706637601 86400 3600 604800 86400
  NS localhost.
+
+; redirection
 google.com               CNAME   forcesafesearch.google.com.
 www.google.com           CNAME   forcesafesearch.google.com.
 google.com.ua            CNAME   forcesafesearch.google.com.
@@ -16,8 +18,9 @@ m.youtube.com            CNAME   restrict.youtube.com.
 youtubei.googleapis.com  CNAME   restrict.youtube.com.
 youtube.googleapis.com   CNAME   restrict.youtube.com.
 www.youtube-nocookie.com CNAME   restrict.youtube.com.
-www.netbsd.org           CNAME   rpz-passthru.
-wiki.netbsd.org          CNAME   rpz-passthru.
+
+; white list
+*.netbsd.org             CNAME   rpz-passthru.
 
 ru  	   CNAME .
 *.ru     CNAME .
