@@ -13,11 +13,11 @@ duckduckgo.com           CNAME   safe.duckduckgo.com.
 www.duckduckgo.com       CNAME   safe.duckduckgo.com.
 pixaby.com               CNAME   safesearch.pixabay.com.
 www.pixaby.com           CNAME   safesearch.pixabay.com.
-www.youtube.com          CNAME   restrict.youtube.com.
-m.youtube.com            CNAME   restrict.youtube.com.
-youtubei.googleapis.com  CNAME   restrict.youtube.com.
-youtube.googleapis.com   CNAME   restrict.youtube.com.
-www.youtube-nocookie.com CNAME   restrict.youtube.com.
+; www.youtube.com          CNAME   restrict.youtube.com.
+; m.youtube.com            CNAME   restrict.youtube.com.
+; youtubei.googleapis.com  CNAME   restrict.youtube.com.
+; youtube.googleapis.com   CNAME   restrict.youtube.com.
+; www.youtube-nocookie.com CNAME   restrict.youtube.com.
 
 ; white list
 *.netbsd.org             CNAME   rpz-passthru.
