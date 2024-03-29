@@ -16,6 +16,10 @@ options {
 
 	listen-on port 5353 {127.0.0.1;};
 
+	// Serve stale records
+        stale-answer-enable yes;
+        max-stale-ttl: 43200;
+
 	// Tuning
 	qname-minimization relaxed;
 	interface-interval 0;
