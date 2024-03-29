@@ -29,13 +29,16 @@ options {
         check-names response ignore;
 	zone-statistics no;
 
-	response-policy { 
-	    zone "rpz.oisd-nsfw"; 
-	    zone "rpz.hagezy-anti-privacy"; 
-	    zone "rpz.hagezy-gambling";
-	    zone "rpz.hagezy-multi-normal"; 
-	    zone "rpz.hagezy-no-safe-search"; 
-	    zone "rpz.hagezy-threat"; 
-	    zone "rpz.olus-dns.com"; 
-	};
+	response-policy {
+            zone "rpz.oisd-nsfw";
+            zone "rpz.hagezy-anti-privacy";
+            zone "rpz.hagezy-gambling";
+            zone "rpz.hagezy-multi-normal";
+            zone "rpz.hagezy-no-safe-search";
+            zone "rpz.hagezy-threat" ;
+            zone "rpz.blocklist.olus-dns.com";
+            zone "rpz.olus-dns.com";
+        } qname-wait-recurse false
+          recursive-only false
+          nsip-wait-recurse false;
 };
