@@ -12,6 +12,6 @@ curl -o "/etc/bind/blocklists/hagezy-no-safe-search.rpz" "https://raw.githubuser
 
 curl -o "/etc/bind/blocklists/hagezy-threat.rpz" "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/rpz/tif.txt"
 
-curl -o "/etc/bind/blocklists/olus-blocklist.rpz" "https://raw.githubusercontent.com/ousatov-ua/dns-filtering/main/blocklist/olus-blocklist.rpz"
+curl -o "/etc/bind/blocklists/olus-blocklist.rpz" "https://raw.githubusercontent.com/ousatov-ua/dns-filters/main/rpz/olus.rpz"
 
 rndc reload
