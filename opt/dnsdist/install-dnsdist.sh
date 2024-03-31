@@ -4,7 +4,8 @@ sudo apt install cmake
 export CFLAGS="-Ofast -flto"
 export CXXFLAGS="-Ofast -flto"
 
-# install quich (quich-install.sh)
+# install rust (install-rust.sh)
+# install quich (install-quiche.sh)
 
 ./configure --enable-dns-over-tls --enable-dns-over-https --enable-dns-over-http3 --enable-dns-over-quic --with-systemd --prefix=/usr --with-quiche
 make
