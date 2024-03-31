@@ -1,4 +1,4 @@
-
+#!/bin/bash
 sudo apt install libjemalloc-dev
 sudo apt-get install -y pkg-config
 sudo apt-get install libuv1-dev
