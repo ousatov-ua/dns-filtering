@@ -7,7 +7,7 @@ readonly QUICHE_TARBALL="${QUICHE_VERSION}.tar.gz"
 readonly QUICHE_TARBALL_URL="https://github.com/cloudflare/quiche/archive/${QUICHE_TARBALL}"
 readonly QUICHE_TARBALL_HASH='9c460d8ecf6c80c06bf9b42f91201ef33f912e2615a871ff2d0e50197b901c71'
 
-INSTALL_PREFIX=/usr
+INSTALL_PREFIX=/usr/local
 SOEXT=so
 if [ $(uname) = Darwin ]; then
   if [ $(id -u) = 0 ]; then
