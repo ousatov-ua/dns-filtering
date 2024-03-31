@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt install autoconf automake libedit-dev libsodium-dev libtool-bin pkg-config protobuf-compiler libnghttp2-dev libh2o-evloop-dev libluajit-5.3-dev libboost-all-dev libsystemd-dev libbpf-dev libclang-dev
+sudo apt install autoconf automake libedit-dev libsodium-dev libtool-bin pkg-config protobuf-compiler libnghttp2-dev libh2o-evloop-dev libluajit-5.1-dev libboost-all-dev libsystemd-dev libbpf-dev libclang-dev
 sudo apt install cmake
 export CFLAGS="-Ofast -flto"
 export CXXFLAGS="-Ofast -flto"
