@@ -6,6 +6,6 @@ export CXXFLAGS="-Ofast -flto"
 
 # install quich (quich-install.sh)
 
-./configure --enable-dns-over-tls --enable-dns-over-https --enable-dns-over-http3 --enable-dns-over-quic --with-systemd
+./configure --enable-dns-over-tls --enable-dns-over-https --enable-dns-over-http3 --enable-dns-over-quic --with-systemd --prefix=/usr --with-quiche
 make
 sudo make install
