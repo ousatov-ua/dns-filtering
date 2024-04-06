@@ -8,7 +8,7 @@ sudo apt-get install libcap-dev
 export CFLAGS="-Ofast -pipe -march=native"
 export CXXFLAGS="-Ofast -pipe -march=native"
 export CPPFLAGS="-Ofast -pipe -march=native"
-./configure --with-libxml2 --with-jemalloc=yes --disable-doh --prefix=/usr
+./configure --with-libxml2 --with-jemalloc=yes --prefix=/usr --with-openssl --with-json-c --with-libsystemd
 make
 make install
 
