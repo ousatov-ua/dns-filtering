@@ -5,7 +5,9 @@ sudo apt-get install libuv1-dev
 sudo apt install openssl
 sudo apt install libssl-dev
 sudo apt-get install libcap-dev
-export CFLAGS="-Ofast"
+export CFLAGS="-Ofast -pipe -march=native"
+export CXXFLAGS="-Ofast -pipe -march=native"
+export CPPFLAGS="-Ofast -pipe -march=native"
 ./configure --with-libxml2 --with-jemalloc=yes --disable-doh --prefix=/usr
 make
 make install
