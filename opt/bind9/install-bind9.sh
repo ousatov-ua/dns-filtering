@@ -6,7 +6,7 @@ sudo apt install openssl
 sudo apt install libssl-dev
 sudo apt-get install libcap-dev
 export CFLAGS="-Ofast"
-./configure --with-jemalloc=yes --with-tuning=large --disable-doh
+./configure --with-libxml2 --with-jemalloc=yes --disable-doh --prefix=/usr
 make
 make install
 
