@@ -10,7 +10,7 @@ sudo apt install libfstrm-dev
 export CFLAGS="-Ofast -pipe -march=native"
 export CXXFLAGS="-Ofast -pipe -march=native"
 export CPPFLAGS="-Ofast -pipe -march=native"
-./configure --with-libxml2 --with-jemalloc=yes --prefix=/usr --with-openssl --with-json-c --with-libsystemd --enable-dnstap --enable-tcp-fastopen --with-tuning=large --disable-pthread-rwlock
+./configure --with-libxml2 --with-jemalloc=yes --prefix=/usr --with-openssl --with-json-c --with-libsystemd --enable-dnstap --enable-tcp-fastopen --with-tuning=large --disable-pthread-rwlock --disable-doh
 make
 make install
 
