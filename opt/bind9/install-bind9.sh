@@ -7,9 +7,9 @@ sudo apt install libssl-dev
 sudo apt-get install libcap-dev
 sudo apt install libprotobuf-c-dev
 sudo apt install libfstrm-dev llvm-16-dev
-export CFLAGS="-O3 -pipe -march=native -flto"
-export CXXFLAGS="-O3 -pipe -march=native -flto"
-export CPPFLAGS="-O3 -pipe -march=native -flto"
+export CFLAGS="-O3 -pipe -march=znver3 -flto"
+export CXXFLAGS="-O3 -pipe -march=znver3 -flto"
+export CPPFLAGS="-O3 -pipe -march=znver3 -flto"
 ./configure --with-libxml2 --with-jemalloc=yes --prefix=/usr --with-openssl --with-json-c --with-libsystemd --enable-dnstap --enable-tcp-fastopen --with-tuning=large --disable-pthread-rwlock --disable-doh
 make
 make install
