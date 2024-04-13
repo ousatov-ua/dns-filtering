@@ -6,3 +6,8 @@ export CPPFLAGS="-O3 -pipe -march=znver3 -flto"
 
 ./configure --enable-dnstap --enable-lto --enable-systemd --with-libcap
 make
+make install
+
+sudo groupadd pdns-recursor
+sudo adduser --home /var/lib/pdns-recursor --disabled-login pdns-recursor
+sudo usermod -a -G pdns-recursor pdns-recursor
