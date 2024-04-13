@@ -14,6 +14,9 @@ export CPPFLAGS="-O3 -pipe -march=znver3 -flto"
 make
 make install
 
+sudo groupadd named
+sudo adduser --home /var/lib/named --disabled-login named
+
 
 vim ~/.bashrc <<- put this: export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib"
 sudo vim /etc/ld.so.conf.d/99local.conf  <<- put this: /usr/local/lib
